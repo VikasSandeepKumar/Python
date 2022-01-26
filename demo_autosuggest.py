@@ -28,8 +28,11 @@ class DemoAutosuggest():
                 results.click()
                 time.sleep(6)
                 break
-
-
+        origin = driver.find_element(By.XPATH, "//input[@id='BE_flight_origin_city']")
+        origin.click()
+        time.sleep(15)
+        driver.find_element(By.XPATH, "//td[@id='01/02/2022']").click()
+        time.sleep(15)
 dauto = DemoAutosuggest()
 dauto.demo_autosuggest_dropdown()
 
