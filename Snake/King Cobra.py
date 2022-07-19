@@ -1,3 +1,4 @@
+from idlelib.configdialog import changes
 from turtle import *
 from random import randrange
 from freegames import square,vector
@@ -11,7 +12,7 @@ def change(x,y):
     aim.y=y
 
 def inside(head):
-    return-200<head.x<190 and -200<head.y<190
+    return -200<head.x<190 and -200<head.y<190
 
 def move():
     head=snake[-1].copy()
